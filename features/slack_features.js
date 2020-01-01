@@ -17,6 +17,7 @@ module.exports = function(controller) {
     controller.on('direct_message', async(bot, message) => {
         await bot.reply(message,'I heard a private message');
     });
+/*
 
     controller.hears('dm me', 'message', async(bot, message) => {
         await bot.startPrivateConversation(message.user);
@@ -41,6 +42,7 @@ module.exports = function(controller) {
         await bot.startConversationInThread(message.channel, message.user, message.incoming_message.channelData.ts);
         await bot.say('And this should also be in that thread!');
     });
+
 
     controller.hears('blocks', 'message', async(bot, message) => {
 
@@ -193,5 +195,5 @@ module.exports = function(controller) {
     controller.on('dialog_cancellation', async (bot, message) => {
         await bot.reply(message, 'Got a dialog cancellation');
     });
-
+*/
 }
